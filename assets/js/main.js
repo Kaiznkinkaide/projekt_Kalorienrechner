@@ -10,9 +10,9 @@ let calc = () =>{
     let manCalc = 66 + (13.7 * weight) + (5 * size) - ( 6.8 * age)
     if (manRadio){
         let manCalcElement = manCalc * activ
-        output.innerHTML = `${Math.round(manCalcElement)}`
+        output.innerHTML = `${Math.round(manCalcElement)} Kalorien`
     } else if (womanRadio){
         let womanCalcElement = womanCalc * activ
-        output.innerHTML = `${Math.round(womanCalcElement)}`
+        output.innerHTML = `${Math.round(womanCalcElement)} Kalorien`
     }
 }

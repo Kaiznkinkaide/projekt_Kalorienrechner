@@ -12,17 +12,17 @@
     <h1>Kalorienrechner</h1>
     <form onsubmit="calc(); return false">
         <h3>Body facts</h3>
-        <div>
+        <div class="facts">
             <label for="age" class="labelInput">Alter:</label>
-            <input type="number" name="age" id="age">
+            <input type="number" name="age" id="age" placeholder="in Jahren">
         </div>
-        <div>
+        <div class="facts">
             <label for="weight" class="labelInput">Gewicht:</label>
-            <input type="number" name="weight" id="weight">
+            <input type="number" name="weight" id="weight" placeholder="in kg">
         </div>
-        <div>
+        <div class="facts">
             <label for="size" class="labelInput">Größe:</label>
-            <input type="number" name="size" id="size">
+            <input type="number" name="size" id="size" placeholder="in cm">
         </div>
         <div>
             <h3>Gender</h3>
@@ -31,7 +31,7 @@
             <input type="radio" name="geschlecht" id="woman">
             <label for="woman">Frauen</label>
         </div>
-        <div>
+        <div class="select">
             <h3>Activity-level</h3>
             <select name="list" id="list">
                 <option value="1.2">Sitzend: wenig oder keine Bewegung</option>
