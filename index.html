@@ -33,27 +33,13 @@
         </div>
         <div>
             <h3>Activity-level</h3>
-            <div>
-                <input type="radio" name="activity" id="sitzend">
-                <label for="sitzend">Sitzend</label>
-            </div>
-            <div>
-                <input type="radio" name="activity" id="leicht-aktiv">
-                <label for="leicht-aktiv">Leicht-aktiv</label>
-            </div>
-            <div>
-                <input type="radio" name="activity" id="maessig-aktiv">
-                <label for="maessig-aktiv">Mäßig-Aktiv</label>
-            </div>
-            <div>
-                <input type="radio" name="activity" id="sehr-aktiv">
-                <label for="sehr-aktiv">Sehr-aktiv</label>
-            </div>
-            <div>
-                <input type="radio" name="activity" id="sehr-stark-aktiv">
-                <label for="sehr-satark-aktiv">Sehr-Stark-aktiv</label>
-            </div>
-
+            <select name="list" id="list">
+                <option value="1.2">Sitzend: wenig oder keine Bewegung</option>
+                <option value="1.375">Leicht aktiv: Sport 1-3 Tage/Woche </option>
+                <option value="1.55">Mäßig aktiv: Sport an 3-5 Tagen/Woche</option>
+                <option value="1.725">Sehr aktiv: Sport an 6-7 Tagen/Woche</option>
+                <option value="1.9">Sehr stark aktiv: Sport oder 2X tägliches Training</option>
+            </select>
         </div>
         <input type="submit" value="Berechne">
     </form>
