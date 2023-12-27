@@ -5,9 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+    <h1>Kalorienrechner</h1>
+    <form onsubmit="calc(); return false">
+        <h3>Body facts</h3>
+        <div>
+            <label for="age" class="labelInput">Alter:</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="weight" class="labelInput">Gewicht:</label>
+            <input type="number" name="weight" id="weight">
+        </div>
+        <div>
+            <label for="size" class="labelInput">Größe:</label>
+            <input type="number" name="size" id="size">
+        </div>
+        <div>
+            <h3>Gender</h3>
+            <input type="radio" name="geschlecht" id="man">
+            <label for="man">Männer</label>
+            <input type="radio" name="geschlecht" id="woman">
+            <label for="woman">Frauen</label>
+        </div>
+        <div>
+            <h3>Activity-level</h3>
+            <div>
+                <input type="radio" name="activity" id="sitzend">
+                <label for="sitzend">Sitzend</label>
+            </div>
+            <div>
+                <input type="radio" name="activity" id="leicht-aktiv">
+                <label for="leicht-aktiv">Leicht-aktiv</label>
+            </div>
+            <div>
+                <input type="radio" name="activity" id="maessig-aktiv">
+                <label for="maessig-aktiv">Mäßig-Aktiv</label>
+            </div>
+            <div>
+                <input type="radio" name="activity" id="sehr-aktiv">
+                <label for="sehr-aktiv">Sehr-aktiv</label>
+            </div>
+            <div>
+                <input type="radio" name="activity" id="sehr-stark-aktiv">
+                <label for="sehr-satark-aktiv">Sehr-Stark-aktiv</label>
+            </div>
+
+        </div>
+        <input type="submit" value="Berechne">
+    </form>
+    <p id="output"></p>
     <script src="./assets/js/main.js"></script>
 </body>
 
